@@ -1,5 +1,10 @@
 这是经过修改处理的m3u8切片工具，添加了AES加密机制。
 
+aes加密方式为：CBC, 128bit Key, pkcs7padding填充。（苹果的mediafilesegmenter工具也是这种加密机制）切片加密的视频可以直接使用苹果手机浏览器访问播放。
+
+为ts文件实现aes加密机制运行方式：
+./segmenter -i test.ts -d 10 -p seg -m seg.m3u8 -u '' -K "http://10.130.29.36/self.key"
+
 # Inactive and Deprecated
 
 I no longer have much time to work on this project and for the most part it is deprecated
