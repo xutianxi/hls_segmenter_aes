@@ -1,3 +1,5 @@
+这是经过修改处理的m3u8切片工具，添加了AES加密机制。
+
 # Inactive and Deprecated
 
 I no longer have much time to work on this project and for the most part it is deprecated
